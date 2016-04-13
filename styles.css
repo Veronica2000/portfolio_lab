@@ -1,58 +1,21 @@
 
 
-
-
-
-
-
-html, body
+   html, body
     {
             padding:0;
             margin:0;
             height:100%;
     }
-    #page
-    {
-            min-height:100%;
-            position:relative;
-            height:100%;
-    }
+
     header
     {
             background-color:#05C0A1;
             min-height:100px;
             width:100%;
-    		position:relative;
-    
-    }
-    #main
-    {
-            width:1300px;
-            margin-left:auto;
-            margin-right:auto;
-            background-color:#F1F2F3;
-            min-height:90%;
-            height:auto;
-            height:89%;
-            margin:0 auto -50px;
-            vertical-align:bottom;
-            font-size: 14px;
-            font-family: 'Droid Sans', sans-serif;
-            color: #000000;
+    		position:fixed;
+        }
 
-    }
-    #footer
-    {
-            position:fixed;
-            width:100%;
-            bottom:0;
-            height:35px;
-            background-color: #05C0A1;
-    }
-    
-    
-    header h2
-    {
+    header h2 {
             text-align:center;
             font-size:44px;
             color:#8F0049;
@@ -64,20 +27,30 @@ html, body
             margin-top:20px;
             margin-left:20px;
             text-decoration:none;
-    }
-    
+            }
+
     header h2, a, a:visited, a:hover, a:active
-    {
+            {
             color: #FFFFFF;
             text-decoration: none;
+            }
+    #main
+    {
+            width:100%;
+            font-size: 14px;
+            font-family: 'Droid Sans', sans-serif;
+            padding-bottom: 35px;
+            padding-top: 100px;
+
     }
-    
-    
-    
-    
-    
-    
-    
+    #footer
+    {
+            position:fixed;
+            width:100%;
+            bottom:0;
+            height:35px;
+            background-color: #05C0A1;
+    } 
     
     
     /* NAVIGATION BAR CODE */
@@ -91,7 +64,6 @@ html, body
             right:0;
             bottom:0;
             background-color:#FF8E07;
-            color:green;
             min-width:800px;
             text-align:left;
             height:20px;
@@ -113,6 +85,42 @@ html, body
     {
     background-color:#DA7600;
     }
+/*portfolio*/
 
+
+	.portfolio {
+		padding-bottom: 35px;
+		padding-top: 150px
+	}
+
+	.line {
+		margin: auto;
+	}
+
+    h3 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .work {
+    	display: inline-block;
+    	padding: 30px;
+    	margin: 20px;
+    	height: 300px;
+    	width: 300px;
+    	border: 3px solid black;
+
+    }
+
+    .work img {
+    	display : block;
+    	margin : auto;
+    }
+
+    figcaption {
+    	text-align: center;
+
+    }
 
 
