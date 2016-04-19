@@ -1,16 +1,22 @@
 
 
-   html, body
+   body
     {
             padding:0;
             margin:0;
             height:100%;
+            background-color: rgba(232, 96, 149, .25);
+            display: inline-block;
     }
 
+    img {
+            max-width: 100%
+        }
+/*header*/
     header
     {
-            background-color:#05C0A1;
-            min-height:100px;
+            background-color: rgb(5, 192, 161);
+            height:110px;
             width:100%;
     		position:fixed;
         }
@@ -18,36 +24,79 @@
     header h2 {
             text-align:center;
             font-size:44px;
-            color:white;
+            color:#F1F1F1;
             left:0px;
             top:20px;
             font-weight:bold;
             font-family: 'Limelight', cursive;
-            float:left;
-            margin-top:20px;
-            margin-left:20px;
+            text-shadow: 0 0 3px #030303;
+            float:right;
+            margin-top:40px;
+            margin-right:40px;
             text-decoration:none;
             }
-            
+
+/*about page*/
+    #about {
+        padding-top: 120px; 
+        padding-bottom: 160px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 140px;
+        width: 20%;
+        margin-top: 0px;
+        background-color: #008E76;
+        color: white;
+        display: inline-block;
+        font-family: 'Droid Sans', sans-serif;
+
+    }
+    #about h3 {
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+    }
+
+
+
     .spacer {
             width: 100%;
-            height: 140px;
-            display:static;
+            height: 20%;
+            position:static;
             }
     
 
-    #main
+    #mainpage
     {
-            width:100%;
-            font-size: 14px;
-            font-family: 'Droid Sans', sans-serif;
             padding-bottom: 35px;
-            padding-top: 150px;
+            padding-top: 200px;
+            margin: auto 60px auto 20px;
+            width: 40%;
+            float: right;
+            display: inline-block; 
+        }
+
+    #mainpage h3 {
+            font-family: 'Limelight', cursive;
+            font-size: 24px;
 
     }
+
+    #mainpage p {
+            font-size: 14px;
+            font-family: 'Droid Sans', sans-serif;
+            color: 000000;
+
+    }
+
+    #mainimg img {
+            border-radius: 50%;
+            max-width: 100%;
+            margin: 120px auto 10px -265px ;
+
+    }
+
     #footer
     {
-            position:fixed;
             width:100%;
             bottom:0;
             height:35px;
@@ -61,22 +110,23 @@
     nav
     {
             position:absolute;
-            top:100px;
+            top:110px;
             left:0;
             right:0;
             bottom:0;
-            background-color:#FF8E07;
+            background-color:rgb(255, 142, 7);
             min-width:800px;
-            text-align:left;
+            text-align:right;
             height:20px;
-            padding:10px 20px;
+            padding:15px 30px;
     }
     
     
     nav a
     {
             font-size:18px;
-            margin:10px 0;height:20px;
+            margin:10px 0;
+            height:20px;
             padding:12px 10px;
             color:#000;
             font-family: 'Poiret One', cursive;
@@ -86,11 +136,20 @@
     nav a:hover
     {
     background-color:#DA7600;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
     }
 
     nav a:visited {
         background-color: #E8065D;
+
     }
+
+  /*  .buttons {
+        float: right;
+        margin: auto;
+    } */
 /*portfolio*/
 
 
@@ -101,27 +160,23 @@
 
 	.line {
 		margin: auto;
+        width: 100%;
 	}
-
-    h3 {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 
     .work {
     	display: inline-block;
     	padding: 30px;
-    	margin: 20px;
+    	margin: 10px;
     	height: 300px;
     	width: 300px;
     	border: 3px solid black;
 
     }
 
-    .work img {
-    	display : block;
-    	margin : auto;
+    .work h3 {
+        font-family: 'Limelight', cursive;
+        font-weight: bold;
+        text-align: center;
     }
 
     figcaption {
@@ -129,19 +184,39 @@
 
     }
 
-    #about {
-        padding: 20px; 
-        margin: 140px 0px 0px 0px;
-        display:inline-block; 
-        width: 25%;
-        height: 100%;
-        background-color: #008E76;
-        color: white;
-    }
 
-    .pics {
-        display: inline-block;
+
+    .main {
+        display: inline;
         margin-top: 140px;
+    }
+
+    .main img {
+
 
     }
+
+    
+
+@media (max-width: 1000px) {
+
+    #about {
+        display: inline;
+    }
+    #mainimg {
+        max-width: 200px;
+        max-height: auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+    
+}
+
+@media (max-width: 400px) {
+    .main {
+        display: block;
+    }
+}
     
